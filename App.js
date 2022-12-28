@@ -196,11 +196,11 @@ const App = () => {
         {/* render volume adjustment and muted and unmuted */}
         {isJoined && renderVolumeView()}
 
-        {/* <VideoPlayer
+        <VideoPlayer
           style={styles.videoPlayerStyle}
           source={demoVideo}
           resizeMode="contain"
-        /> */}
+        />
       </ScrollView>
     </View>
   );
