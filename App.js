@@ -26,7 +26,7 @@ const demoVideo = require('./assets/videos/video.mov');
 const appId = '213305577b4c43e3a1f960218378be86';
 const channelName = 'asdf';
 const token =
-  '007eJxTYLjefmPh8heauywrjJxU86evOMXzr2xxq9Ovr1W2PlUvnE4rMBgZGhsbmJqamyeZJJsYpxonGqZZmhkYGVoYm1skpVqY9XutSW4IZGSI4elnZmSAQBCfhSGxOCWNgQEAnZUflQ==';
+  '007eJxTYDDa5Dg3pPthrePMsGeRsVd7fec9+rPqndiR1ZvcFh1TYJ6nwGBkaGxsYGpqbp5kkmxinGqcaJhmaWZgZGhhbG6RlGphxtO7LrkhkJHBtXwfAyMUgvgsDInFKWkMDACQZR+1';
 const uid = 0;
 
 const App = () => {
@@ -132,7 +132,7 @@ const App = () => {
 
   //   Volume slider  adjustRecordingSignalVolume takes (0-100) for minimum and max volume
   const onValueChange = value => {
-    agoraEngineRef.current.adjustRecordingSignalVolume(value);
+    agoraEngineRef.current.adjustPlaybackSignalVolume(value);
   };
 
   const renderVolumeView = () => {
